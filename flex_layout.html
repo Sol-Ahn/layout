@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 2em;
+      }
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+      }
+      .container > * {
+        padding: 20px;
+        flex: 1 100%;
+      }
+      .nav {
+        margin: 0;
+        padding: 0.5em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        background-color: lightsalmon;
+      }
+      .nav a {
+        text-decoration: none;
+        display: block;
+        color: black;
+      }
+      .nav a:hover {
+        background-color: white;
+      }
+      .header {
+        background-color: lightblue;
+        text-align: center;
+      }
+      .main {
+        text-align: left;
+        background-color: lightgreen;
+      }
+      .aside-1 {
+        background-color: lightyellow;
+        flex-basis: 50vh;
+        align-items: flex-start;
+      }
+      .aside-2 {
+        background-color: lightcyan;
+        flex-basis: 50vh;
+        align-items: flex-end;
+      }
+      .footer {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <header class="header">Header</header>
+      <article class="main">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit inceptos
+          varius, fusce bibendum neque in sollicitudin vel vehicula laoreet,
+          duis lacinia hendrerit auctor integer ultrices orci etiam. Venenatis
+          rutrum ultricies commodo tincidunt facilisis sollicitudin penatibus
+          ligula egestas donec, vulputate parturient convallis conubia torquent
+          dapibus magnis condimentum vel hac, est taciti urna luctus ut dis eros
+          sociis cursus.
+        </p>
+      </article>
+      <aside class="aside-1">Aside-1</aside>
+      <aside class="aside-2">Aside-2</aside>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>
